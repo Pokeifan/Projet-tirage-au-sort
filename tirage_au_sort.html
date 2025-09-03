@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirage au sort - IPI Toulouse</title>
+    <script src="tirage_au_sort.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tirage au sort des étudiants</h1>
+
+        <!-- Formulaire d'ajout d'étudiants -->
+        <form id="formAjoutEtudiant" class="form-ajout">
+            <input type="text" id="nomEtudiant" class="input-text" placeholder="Nom Prénom">
+            <button type="submit" class="btn ajout-btn">Ajouter</button>
+        </form>
+        <p class="error" id="messageErreur"></p>
+
+        <!-- Liste des étudiants -->
+        <h2>Liste des étudiants</h2>
+        <ul id="listeEtudiants" class="liste-etudiants"></ul>
+
+        <!-- Boutons de contrôle -->
+        <div class="buttons">
+            <button id="tirageBtn" class="btn tirage-btn">Tirer au sort un étudiant</button>
+            <button id="viderListeBtn" class="btn vider-btn">Vider la liste</button>
+        </div>
+
+        <!-- Résultat du tirage au sort -->
+        <p id="messageResultat" class="message-resultat"></p>
+    </div>
+
+    
+</body>
+</html>
